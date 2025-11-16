@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h2>Logo</h2>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#aboutus">Contact Us</a></li>
+          </ul>
+          <div class="username-btn">Username</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="container">
+          <div class="home-content">
+            <div class="text-content">
+              <h1>
+                Revitalize Your<br />
+                Clothes with Expert<br />
+                <span>Laundry Services!</span>
+              </h1>
+
+              <p>
+                From premium dry cleaning to swift wash and fold, we
+                <br />deliver care and convenience. Schedule a pickup and <br />
+                rediscover the freshness of your clothes today!
+              </p>
+              <button>
+                <a href="#services" style="text-decoration: none; color: white"
+                  >Book a Service now</a
+                >
+              </button>
+            </div>
+            <div data-aos="fade-left" class="image">
+              <img src="./images/abc.png" alt="Laundry Service" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-achievements" class="our-achievements">
+        <div class="container-achievements">
+          <div class="heading"><h2>Our Achievements</h2></div>
+          <div>
+            <h2>15+</h2>
+            <span>Laundry Services</span>
+          </div>
+          <div>
+            <h2>240+</h2>
+            <span>Happy Customers</span>
+          </div>
+          <div>
+            <h2>2+ Yrs</h2>
+            <span>Experience</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div data-aos="fade-right" class="service-container-1">
+          <div class="header-container">
+            <h2>Our Services</h2>
+            <p>Click on the Add to Cart button to add services to your cart</p>
+          </div>
+          <div class="service-item-container">
+            <div class="service-item">
+              <span id="s-i">
+                Dry Cleaning <span>&centerdot; ₹200.00</span></span
+              >
+              <button class="cart-btn">Add Item</button>
+            </div>
+            <div class="service-item">
+              <span id="s-i">Wash & fold <span>&centerdot; ₹200.00</span></span>
+              <button class="cart-btn">Add Item</button>
+            </div>
+            <div class="service-item">
+              <span id="s-i">Ironing <span>&centerdot; ₹200.00</span></span>
+              <button class="cart-btn">Add Item</button>
+            </div>
+            <div class="service-item">
+              <span id="s-i"
+                >Stain removing <span>&centerdot; ₹200.00</span></span
+              >
+              <button class="cart-btn">Add Item</button>
+            </div>
+            <div class="service-item">
+              <span id="s-i"
+                >Leather & Suede Cleaning <span>&centerdot; ₹200.00</span></span
+              >
+              <button class="cart-btn">Add Item</button>
+            </div>
+            <div class="service-item last-service">
+              <span id="s-i"
+                >Wedding Dress cleaning <span>&centerdot; ₹200.00</span></span
+              >
+              <button class="cart-btn">Add Item</button>
+            </div>
+          </div>
+          <div class="extra-info">
+            <p>
+              <span><ion-icon name="alert-circle-outline"></ion-icon> </span>
+              The items to the cart and Book Now
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="service-container-2">
+          <div class="cart-part-1">
+            <div class="cart-part-1-heading-container">
+              <h2>Added Items</h2>
+            </div>
+            <div class="cart-part-1-serial-container">
+              <span>S.no</span><span>Service Name</span><span>Price</span>
+            </div>
+            <div class="cart">
+              <div>
+                <ion-icon class="alert" name="alert-circle-outline"></ion-icon>
+              </div>
+              <h2>No Item Added</h2>
+              <p>Add Item to the cart from the service bar</p>
+            </div>
+            <div class="cart-part-1-amount-container">
+              <span>Total Amount</span><span id="price">$0</span>
+            </div>
+          </div>
+          <div class="cart-part-2">
+            <form id="laundryForm">
+              <h4>Book now</h4>
+              <div class="frm">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Rakesh Choudhary"
+                  required
+                />
+              </div>
+              <div class="bottom-frm">
+                <div class="frm">
+                  <label for="email">Email ID</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="email"
+                    placeholder="Example@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="frm">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="user_phone"
+                    id="phone"
+                    placeholder="0000000000"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="frm-btn-con">
+                <button class="frm-btn" type="submit">Book now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutus" class="section-aboutus">
+        <div class="about-container">
+          <div class="support-features" data-aos="flip-left">
+            <img src=".//images/support1.png" />
+            <h3>Premium Service</h3>
+            <p>
+              Elevate your wardrobe with our meticulous dry cleaning, ensuring
+              garments look and feel as good as new.
+            </p>
+          </div>
+
+          <div class="support-features" data-aos="flip-left">
+            <img src=".//images/support2.png" />
+            <h3>Quick Support</h3>
+            <p>
+              We're committed to providing prompt solutions to ensure your
+              experience is smooth and worry-free
+            </p>
+          </div>
+
+          <div class="support-features" data-aos="flip-left">
+            <img src=".//images/support3.png" />
+            <h3>Hassle Free Delivery</h3>
+            <p>
+              Enjoy seamless service with our convenient pickup and delivery
+              options, tailored to your schedule.
+            </p>
+          </div>
+
+          <div class="support-features" data-aos="flip-left">
+            <img src=".//images/support4.png" />
+            <h3>Affordable Prices</h3>
+            <p>
+              Experience exceptional care without breaking the bank - our
+              affordable prices make laundry day stress-free.
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          class="newsletter-container"
+          style="background-color: #3ea9fa; min-height: 33.33%"
+        >
+          <div class="text-container">
+            <h1>Subscribe to Our newsletter.</h1>
+          </div>
+          <div class="form-container">
+            <input type="text" placeholder="Full name" id="newsletter-fname" />
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              id="newsletter-email"
+            />
+            <button id="subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+
+        <footer>
+          <div class="st">
+            <h3>Logo</h3>
+            <p>
+              <span>About us</span><br />
+              Lorem ipsum dolor sit amet consecte adipisicing elit. Earum?
+            </p>
+          </div>
+          <div>
+            <h3>Important links</h3>
+            <ul>
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Privacy policy</li>
+              <li>Terms of use</li>
+              <li>Refund policy</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>Example@gmail.com</li>
+              <li>+91-9334523340</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Follow us</h3>
+            <ul class="s-links">
+              <li class="fb"><ion-icon name="logo-facebook"></ion-icon></li>
+              <li class="tw"><ion-icon name="logo-twitter"></ion-icon></li>
+              <li class="insta"><ion-icon name="logo-instagram"></ion-icon></li>
+              <li class="git"><ion-icon name="logo-github"></ion-icon></li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
